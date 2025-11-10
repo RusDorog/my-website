@@ -12,27 +12,41 @@
             <h2>Мои работы</h2>
             
             <div class="category">
-                <h3>Стихи</h3>
+                <div class="category-header">
+                    <h3>Стихи</h3>
+                    <span class="dropdown-icon">▼</span>
+                </div>
                 <ul class="work-list">
-                    <li><a href="#poem1">Осенний вечер</a></li>
+                    <li><a href="#poem1">Осенний вечер <span class="music-indicator">♪</span></a></li>
                     <li><a href="#poem2">Без названия</a></li>
-                    <li><a href="#poem3">Городские огни</a></li>
+                    <li><a href="#poem3">Городские огни <span class="music-indicator">♪</span></a></li>
+                    <li><a href="#poem4">Тишина</a></li>
+                    <li><a href="#poem5">Первая любовь <span class="music-indicator">♪</span></a></li>
                 </ul>
             </div>
             
             <div class="category">
-                <h3>Музыка</h3>
+                <div class="category-header">
+                    <h3>Музыка</h3>
+                    <span class="dropdown-icon">▼</span>
+                </div>
                 <ul class="work-list">
                     <li><a href="#music1">Мелодия души</a></li>
                     <li><a href="#music2">Воспоминания</a></li>
+                    <li><a href="#music3">Рассвет</a></li>
+                    <li><a href="#music4">Городской ритм</a></li>
                 </ul>
             </div>
             
             <div class="category">
-                <h3>Фильмы</h3>
+                <div class="category-header">
+                    <h3>Фильмы</h3>
+                    <span class="dropdown-icon">▼</span>
+                </div>
                 <ul class="work-list">
                     <li><a href="#film1">Путешествие во времени</a></li>
                     <li><a href="#film2">Тени прошлого</a></li>
+                    <li><a href="#film3">Один день из жизни</a></li>
                 </ul>
             </div>
         </div>
@@ -48,11 +62,17 @@
             
             <div id="default" class="default-message">
                 <h2>Добро пожаловать на мой творческий сайт!</h2>
-                <p>Выберите работу из списка слева, чтобы просмотреть её.</p>
+                <p>Наведите на категории слева, чтобы увидеть список работ, и выберите интересующую вас работу для просмотра.</p>
+                <p>Стихи с музыкальным сопровождением отмечены значком ♪</p>
             </div>
             
+            <!-- Стихи с музыкой -->
             <div id="poem1" class="work-item">
                 <h3>Осенний вечер</h3>
+                <audio controls class="audio-player" autoplay>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудио элемент.
+                </audio>
                 <div class="poem-text">
                     Листья падают тихо, кружась в тишине,
                     Осень шепчет прощальные слова.
@@ -83,6 +103,10 @@
             
             <div id="poem3" class="work-item">
                 <h3>Городские огни</h3>
+                <audio controls class="audio-player" autoplay>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудио элемент.
+                </audio>
                 <div class="poem-text">
                     Город спит, но огни не гаснут,
                     Звёзды падают на асфальт.
@@ -96,6 +120,41 @@
                 </div>
             </div>
             
+            <div id="poem4" class="work-item">
+                <h3>Тишина</h3>
+                <div class="poem-text">
+                    Тишина — это не отсутствие звуков,
+                    А присутствие смысла в каждом мгновеньи.
+                    Она говорит с нами на языке чувств,
+                    Дарит покой и душевное просветленье.
+                    
+                    В тишине слышны шепоты прошлых лет,
+                    Отголоски когда-то произнесенных слов.
+                    И понимаешь, что в мире ином ином
+                    Живут ответы на все твои вопросов.
+                </div>
+            </div>
+            
+            <div id="poem5" class="work-item">
+                <h3>Первая любовь</h3>
+                <audio controls class="audio-player" autoplay>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудио элемент.
+                </audio>
+                <div class="poem-text">
+                    Первая любовь — как весенний ручей,
+                    Чистая, светлая, полная сил.
+                    Она наполняет надеждой сердца,
+                    И каждый миг с нею казался таким красивым.
+                    
+                    Помню твои глаза, полные тайн,
+                    Улыбку, что солнцем согревала мой день.
+                    И пусть мы расстались, у каждого свой путь,
+                    Но память о первой любви будет вечно со мной.
+                </div>
+            </div>
+            
+            <!-- Музыка -->
             <div id="music1" class="work-item">
                 <h3>Мелодия души</h3>
                 <p>Тихая, лирическая композиция для фортепиано и скрипки.</p>
@@ -114,6 +173,25 @@
                 </audio>
             </div>
             
+            <div id="music3" class="work-item">
+                <h3>Рассвет</h3>
+                <p>Нежная акустическая композиция, передающая ощущение утренней свежести.</p>
+                <audio controls class="audio-player">
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудио элемент.
+                </audio>
+            </div>
+            
+            <div id="music4" class="work-item">
+                <h3>Городской ритм</h3>
+                <p>Динамичная композиция с элементами джаза, отражающая пульс большого города.</p>
+                <audio controls class="audio-player">
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудио элемент.
+                </audio>
+            </div>
+            
+            <!-- Фильмы -->
             <div id="film1" class="work-item">
                 <h3>Путешествие во времени</h3>
                 <p>Короткометражный фильм о человеке, который обнаруживает способность перемещаться во времени.</p>
@@ -125,6 +203,14 @@
             <div id="film2" class="work-item">
                 <h3>Тени прошлого</h3>
                 <p>Драма о сложных взаимоотношениях и выборе, который определяет нашу судьбу.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <div id="film3" class="work-item">
+                <h3>Один день из жизни</h3>
+                <p>Фильм-наблюдение за обычным днём необычного человека, показывающий красоту в простых моментах.</p>
                 <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                 </div>
